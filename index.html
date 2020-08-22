@@ -1,13 +1,50 @@
 <!DOCTYPE html>
 <html>
     <head>
-
+		<style>
+			/* width */
+			::-webkit-scrollbar {
+			  width: 10px;
+			}
+			
+			/* Track */
+			::-webkit-scrollbar-track {
+			  background: hsla(0, 0%, 0%, 0); 
+			  border-radius: 10px;
+			}
+			 
+			/* Handle */
+			::-webkit-scrollbar-thumb {
+			  background: hsla(0, 0%, 0%, 0.3); 
+			  border-radius: 3px;
+			}
+			
+			/* Handle on hover */
+			::-webkit-scrollbar-thumb:hover {
+			  background: hsla(0, 0%, 0%, 0.4); 
+			}
+			</style>
 
     </head>
-    <body style="margin: 0px; font-family: Sans-serif">
+    <body style="margin: 0px; font-family: Arial, sans-serif;">
         <div style="margin: 0px; background-image: linear-gradient(to right, hsla(300, 100%, 70%, 1) , hsla(200, 100%, 70%, 1))">
-            <img  src="icon.svg" style="display: block; margin-left: auto; margin-right: auto; width: 40%; ">
-        </div>
+            <img  src="icon-size.png" style="
+			display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    padding-top: 8em;
+			">
+
+			<h1 style="
+			color: white;
+   			 text-align: center;
+  			  font-size: 10em;
+   			 padding: 0.5em;
+  			  padding-top: 0.7em;
+  			  margin: 0px;
+			">Slide</h1>
+		</div>
 
 
 
@@ -28,16 +65,22 @@
                 
                 ">
                     
-                    <li>Home</li>
-                    <li>offeic</li>
+                    <li><h2>Home</h2></li>
+                    <li><h2>offeic</h2></li>
                     <style>
                         #menu-list li{
                             
                             padding: 16px;
                             background-color: hsla(0, 0%, 100%, 0.2);
                             margin: 0.5em;
+
                             border-radius: 1em;
-                            display: inline;
+                            display: block;
+							float: left;
+                        }
+						#menu-list li h2{
+                            
+							display: inline;
                         }
                     </style>
                 
