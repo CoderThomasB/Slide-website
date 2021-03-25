@@ -1,92 +1,124 @@
 <!DOCTYPE html>
-<html>
-    <head>
-		<style>
-			/* width */
-			::-webkit-scrollbar {
-			  width: 10px;
+<html style="height: 100%; width: 100%;" lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Slide</title>
+</head>
+
+<body style="margin: 0px; font-family: sans-serif, Arial; height: 100%; width: 100%; overflow: hidden;">
+	<style>
+		@media screen and (orientation:portrait) {
+			body {
+				overflow: auto !important;
 			}
-			
-			/* Track */
-			::-webkit-scrollbar-track {
-			  background: hsla(0, 0%, 0%, 0); 
-			  border-radius: 10px;
+
+			#grid {
+				overflow: auto !important;
+				grid-template-columns: 1fr !important;
 			}
-			 
-			/* Handle */
-			::-webkit-scrollbar-thumb {
-			  background: hsla(0, 0%, 0%, 0.3); 
-			  border-radius: 3px;
+
+			.item:hover {
+				transform: scale(1) !important;
+				box-shadow: 5mm 5mm 5mm var(--shadow-color) !important;
 			}
-			
-			/* Handle on hover */
-			::-webkit-scrollbar-thumb:hover {
-			  background: hsla(0, 0%, 0%, 0.4); 
+
+			.item:active {
+				transform: scale(0.95) !important;
+				box-shadow: 2mm 2mm 2mm var(--shadow-color) !important;
+				transition: all .1s;
 			}
-			</style>
 
-    </head>
-    <body style="margin: 0px; font-family: Arial, sans-serif;">
-        <div style="margin: 0px; background-image: linear-gradient(to right, hsla(300, 100%, 70%, 1) , hsla(200, 100%, 70%, 1))">
-            <img  src="icon-size.png" style="
-			display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 40%;
-    padding-top: 8em;
-			">
+			.item {
+				grid-column: 1 / 2 !important;
+			}
 
-			<h1 style="
-			color: white;
-   			 text-align: center;
-  			  font-size: 10em;
-   			 padding: 0.5em;
-  			  padding-top: 0.7em;
-  			  margin: 0px;
-			">Slide</h1>
-		</div>
+			#Slide {
+				grid-row: 1 / 2 !important;
+			}
 
+			#Virus-Breaker {
+				grid-row: 2 / 3 !important;
+			}
 
+			#Coding-Battles {
+				grid-row: 3 / 4 !important;
+			}
 
-        <div style="
-        width: 100%;
-        background-image: linear-gradient(to right, hsla(40, 100%, 70%, 1) , hsla(300, 100%, 70%, 1));
-        color: hsla(0, 0%, 100%, 0.9);
-        ">
-            <div style="
-            display: table;
-            margin: 0 auto;
-            ">
-                <ul id="menu-list" style="
-                list-style: none;
-                
-                overflow: hidden;
-                padding: 0px;
-                
-                ">
-                    
-                    <li><h2>Home</h2></li>
-                    <li><h2>offeic</h2></li>
-                    <style>
-                        #menu-list li{
-                            
-                            padding: 16px;
-                            background-color: hsla(0, 0%, 100%, 0.2);
-                            margin: 0.5em;
+			#Paper {
+				grid-row: 4 / 5 !important;
+			}
 
-                            border-radius: 1em;
-                            display: block;
-							float: left;
-                        }
-						#menu-list li h2{
-                            
-							display: inline;
-                        }
-                    </style>
-                
-                </ul>
-            </div>
-        </div>
-        background-color: hsl(241, 93%, 66%)
-    </body>
+			#Slide-Calculator {
+				grid-row: 5 / 6 !important;
+			}
+		}
+
+		:root {
+			--hover-transform: 1.1;
+			--shadow-color: hsla(0, 0%, 0%, 30%);
+		}
+
+		.item {
+			box-shadow: 5mm 5mm 5mm var(--shadow-color);
+			background-color: white;
+			border-radius: 2vw;
+			padding-bottom: 100%;
+			height: min-content;
+			background-image: url("App-backgrounds/Nothing.svg");
+			background-size: cover;
+			background-position-x: left;
+			background-position-y: top;
+			transition: all .5s;
+		}
+
+		.item:hover {
+			transform: scale(var(--hover-transform));
+			box-shadow: 6mm 6mm 6mm var(--shadow-color);
+			transition: all .5s;
+		}
+
+		.item:active {
+			transform: scale(0.95);
+			box-shadow: 2mm 2mm 2mm var(--shadow-color);
+			transition: all .1s;
+		}
+	</style>
+	<div id="grid" style="
+	overflow: hidden;
+	--gap: 5vw;
+	background-color: #80d5ff;
+	height: calc(100% - calc(var(--gap) * 2));
+	width: calc(100% - calc(var(--gap) * 2));
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: min-content;
+	gap: var(--gap);
+	padding: var(--gap);
+	">
+		<div class="item" id="Paper" onclick="location.pathname = '/paper-blog/'"
+			style="background-image: url('App-backgrounds/Paper.svg');"></div>
+		<div class="item" id="Virus-Breaker" onclick="location.pathname = '/virus-breaker/'"
+			style="background-image: url('App-backgrounds/Virus Breaker.svg');"></div>
+		<div class="item" id="Coding-Battles" onclick="location.pathname = '/codingbattles/'"
+			style="background-image: url('App-backgrounds/Coding Battles.svg');"></div>
+		<a id="Slide-Calculator" href="/slide-calculator-1.0.deb" download class="item"
+			style="background-image: url('App-backgrounds/Slide Calculator.svg');"></a>
+		<div class="item" id="Slide" style="
+		grid-column-start: 3;
+		grid-row-start: 1;
+		grid-column-end: 5;
+		grid-row-end: 3;
+		
+		background-image: url('App-backgrounds/Slide.svg');
+		"></div>
+	</div>
+	<script>
+		var debug = location.host === "localhost"
+		if (location.protocol != "https:" && !debug) {
+			location.protocol = "https:"
+		}
+	</script>
+</body>
+
 </html>
