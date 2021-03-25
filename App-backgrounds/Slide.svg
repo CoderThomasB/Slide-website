@@ -105,18 +105,18 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="64.339073"
-     inkscape:cx="5.8112367"
-     inkscape:cy="5.0581355"
+     inkscape:cx="3.7050142"
+     inkscape:cy="5.3103767"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
      showgrid="true"
-     inkscape:window-width="1920"
-     inkscape:window-height="1016"
-     inkscape:window-x="1280"
+     inkscape:window-width="1366"
+     inkscape:window-height="704"
+     inkscape:window-x="0"
      inkscape:window-y="27"
      inkscape:window-maximized="1"
-     inkscape:snap-global="true"
+     inkscape:snap-global="false"
      inkscape:snap-nodes="true"
      inkscape:snap-others="false"
      inkscape:snap-bbox="true"
@@ -135,7 +135,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -162,12 +162,34 @@
        xml:space="preserve"
        style="font-size:2.15398px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke-width:0.00945325"
        x="2.3580089"
-       y="7.9694991"
+       y="6.9694991"
        id="text18382"><tspan
          sodipodi:role="line"
          id="tspan18380"
          x="2.3580089"
-         y="7.9694991"
+         y="6.9694991"
          style="fill:#ffffff;fill-opacity:1;stroke-width:0.00945325">Slide</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:0.858895px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke-width:0.00376947"
+       x="0.99405998"
+       y="8.2703342"
+       id="text18382-3"><tspan
+         sodipodi:role="line"
+         id="tspan18380-6"
+         x="0.99405998"
+         y="8.2703342"
+         style="fill:#ffffff;fill-opacity:1;stroke-width:0.00376947">A website portfolio</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:0.858895px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke-width:0.00376947"
+       x="0.47025168"
+       y="9.1105423"
+       id="text18382-3-7"><tspan
+         sodipodi:role="line"
+         id="tspan18380-6-5"
+         x="0.47025168"
+         y="9.1105423"
+         style="fill:#ffffff;fill-opacity:1;stroke-width:0.00376947">from Thomas Booker.</tspan></text>
   </g>
 </svg>
