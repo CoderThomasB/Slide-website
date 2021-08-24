@@ -3,7 +3,6 @@
 
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Slide. A website portfolio from Thomas Booker.</title>
 </head>
 
@@ -84,11 +83,32 @@
 			box-shadow: 2mm 2mm 2mm var(--shadow-color);
 			transition: all .1s;
 		}
+
+		body {
+			background-color: #80d5ff;
+		}
+
+		#banner {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			/*height: 1cm;*/
+			color: white;
+			background: repeating-linear-gradient(-45deg,
+					black,
+					black 40px,
+					orange 40px,
+					orange 80px);
+		}
 	</style>
+	<div id="banner">
+		<h2 style="margin: 1mm; text-align: center;">New Page UNDER CONTRACTION <img style="height: 100%;"
+				src="./Contraction.svg" /></h2>
+	</div>
 	<div id="grid" style="
 	overflow: hidden;
 	--gap: 5vw;
-	background-color: #80d5ff;
 	height: calc(100% - calc(var(--gap) * 2));
 	width: calc(100% - calc(var(--gap) * 2));
 	display: grid;
@@ -97,19 +117,22 @@
 	gap: var(--gap);
 	padding: var(--gap);
 	">
-		<a class="item" id="Paper" href="/paper-blog"
-			style="background-image: url('App-backgrounds/Paper.svg');" aria-label="The Paper Game Engine. A 2D game builder"></a>
+		<a class="item" id="Paper" href="/paper-blog" style="background-image: url('App-backgrounds/Paper.svg');"
+			aria-label="The Paper Game Engine. A 2D game builder"></a>
 
 		<a class="item" id="Virus-Breaker" href="/virus-breaker"
-			style="background-image: url('App-backgrounds/Virus Breaker.svg');" aria-label="Virus Breaker. Find a world in your body"></a>
+			style="background-image: url('App-backgrounds/Virus Breaker.svg');"
+			aria-label="Virus Breaker. Find a world in your body"></a>
 
 		<a class="item" id="Coding-Battles" href="/codingbattles"
-			style="background-image: url('App-backgrounds/Coding Battles.svg');" aria-label="Coding Battles. Battle with your code"></a>
+			style="background-image: url('App-backgrounds/Coding Battles.svg');"
+			aria-label="Coding Battles. Battle with your code"></a>
 
 		<a id="Slide-Calculator" href="/slide-calculator-1.0.deb" download class="item"
-			style="background-image: url('App-backgrounds/Slide Calculator.svg');" aria-label="Slide Calculator. A basic calculator for your desktop. Linux only(debian)"></a>
+			style="background-image: url('App-backgrounds/Slide Calculator.svg');"
+			aria-label="Slide Calculator. A basic calculator for your desktop. Linux only(debian)"></a>
 
-		<a class="item" id="Slide" href="./" aria-label="Slide, A website portfolio from Thomas Booker." style="
+		<a class="item" id="Slide" aria-label="Slide, A website portfolio from Thomas Booker." style="
 		grid-column-start: 3;
 		grid-row-start: 1;
 		grid-column-end: 5;
@@ -118,12 +141,12 @@
 		background-image: url('App-backgrounds/Slide.svg');
 		"></a>
 	</div>
-	<script>
+	<!--<script>
 		var debug = location.host === "localhost"
 		if (location.protocol != "https:" && !debug) {
 			location.protocol = "https:"
 		}
-	</script>
+	</script>-->
 </body>
 
 </html>
